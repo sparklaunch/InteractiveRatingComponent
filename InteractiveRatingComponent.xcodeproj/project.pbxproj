@@ -14,6 +14,7 @@
 		904F49C327E6AF5B00D6CDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */; };
 		904F49C427E6AF5B00D6CDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */; };
 		904F49CF27E6B30100D6CDF4 /* Overpass.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904F49CE27E6B30100D6CDF4 /* Overpass.ttf */; };
+		904F49D127E6B4E300D6CDF4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F49D027E6B4E300D6CDF4 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		904F49BC27E6AF5B00D6CDF4 /* InteractiveRatingComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveRatingComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904F49BE27E6AF5B00D6CDF4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		904F49CE27E6B30100D6CDF4 /* Overpass.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Overpass.ttf; path = ../../../../../Downloads/Overpass/Overpass.ttf; sourceTree = "<group>"; };
+		904F49D027E6B4E300D6CDF4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				904F49CD27E6B20600D6CDF4 /* Fonts */,
 				904F49AF27E6AF5900D6CDF4 /* InteractiveRatingComponentApp.swift */,
 				904F49B027E6AF5900D6CDF4 /* ContentView.swift */,
+				904F49D027E6B4E300D6CDF4 /* Utilities.swift */,
 				904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904F49D127E6B4E300D6CDF4 /* Utilities.swift in Sources */,
 				904F49C127E6AF5B00D6CDF4 /* ContentView.swift in Sources */,
 				904F49BF27E6AF5B00D6CDF4 /* InteractiveRatingComponentApp.swift in Sources */,
 			);
