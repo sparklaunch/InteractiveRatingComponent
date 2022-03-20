@@ -13,6 +13,7 @@
 		904F49C227E6AF5B00D6CDF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F49B027E6AF5900D6CDF4 /* ContentView.swift */; };
 		904F49C327E6AF5B00D6CDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */; };
 		904F49C427E6AF5B00D6CDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */; };
+		904F49CF27E6B30100D6CDF4 /* Overpass.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904F49CE27E6B30100D6CDF4 /* Overpass.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		904F49B627E6AF5B00D6CDF4 /* InteractiveRatingComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveRatingComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904F49BC27E6AF5B00D6CDF4 /* InteractiveRatingComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveRatingComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904F49BE27E6AF5B00D6CDF4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		904F49CE27E6B30100D6CDF4 /* Overpass.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Overpass.ttf; path = ../../../../../Downloads/Overpass/Overpass.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		904F49AE27E6AF5900D6CDF4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				904F49CD27E6B20600D6CDF4 /* Fonts */,
 				904F49AF27E6AF5900D6CDF4 /* InteractiveRatingComponentApp.swift */,
 				904F49B027E6AF5900D6CDF4 /* ContentView.swift */,
 				904F49B127E6AF5B00D6CDF4 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				904F49BE27E6AF5B00D6CDF4 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		904F49CD27E6B20600D6CDF4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				904F49CE27E6B30100D6CDF4 /* Overpass.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				904F49C327E6AF5B00D6CDF4 /* Assets.xcassets in Resources */,
+				904F49CF27E6B30100D6CDF4 /* Overpass.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +309,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
