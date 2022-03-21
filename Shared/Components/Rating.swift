@@ -14,8 +14,8 @@ struct Rating: View {
             Palette.buttonColor
                 .frame(width: 50, height: 50)
             Text(rating, format: .number)
-                .font(.custom("Overpass", size: 20))
-                .font(.headline.weight(.heavy))
+                .font(.custom("Overpass", size: 20, relativeTo: .caption))
+                .fontWeight(.bold)
                 .foregroundColor(Palette.textColor)
                 .baselineOffset(-3)
         }
