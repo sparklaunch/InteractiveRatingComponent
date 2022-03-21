@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct Card: View {
+    @State private var selectedRating: Int = 0
+    func ratingSelected(_ number: Int) -> Void {
+        selectedRating = number
+    }
     var body: some View {
         ZStack {
             Palette.cardColor
@@ -27,10 +31,12 @@ struct Card: View {
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
                 HStack {
                     ForEach(1...5, id: \.self) {
-                        Rating(rating: $0)
+                        Rating(isSelected: selectedRating == $0, selected: ratingSelected, rating: $0)
                             .frame(maxWidth: .infinity)
                     }
                 }
+                Spacer()
+                    .frame(height: 5)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
                 Button {
 
@@ -43,6 +49,7 @@ struct Card: View {
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .tracking(2)
+                            .baselineOffset(-3)
                     }
                     .clipShape(Capsule())
                     .shadow(radius: 5)
