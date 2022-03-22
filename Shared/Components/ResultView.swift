@@ -13,6 +13,18 @@ struct ResultView: View {
         ZStack {
             Palette.backgroundColor
                 .ignoresSafeArea()
+            ZStack {
+                Palette.cardColor
+                VStack {
+                    Image("ThankYou")
+                        .resizable()
+                        .frame(width: 162, height: 108)
+                }
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .padding(.horizontal, 30)
+            .scaledToFit()
+            .shadow(radius: 5)
         }
     }
 }
